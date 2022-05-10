@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bordes</title>
+    <style>
+        #primerDIv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+        }
+
+        #cuadro {
+
+            height: 300px;
+            width: 300px;
+            background-color: rgb(0, 0, 255);
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            border-radius: 60px 0px 60px 60px;
+            border-image: url(nes.png) 30 round;
+            border-image-source: url(nes.png);
+            border-image-outset: 10px;
+            box-shadow: 5px 10px 0px 2px red;
+            background-image: url("nes.png"), url("caballo.webp");
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            transform: translate(480px);
+        }
+
+        #foto1 {
+            background-image: url("itadori.jpg");
+            height: 50%;
+            width: 50%;
+            border-radius: 60px 0px 60px 60px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #texto {
+            width: 90%;
+            text-align: center;
+            margin-left: 50px;
+            height: 30vh;
+        }
+
+        #texto:nth-child(even) {
+            background-color: aqua;
+            margin-right: 400px;
+
+        }
+
+        p::first-letter {
+            font-size: 2rem;
+        }
+
+        #foto1:active {
+            height: 100%;
+            width: 100%;
+            border-radius: 60px 0px 60px 60px;
+        }
+        #parrafo2{
+            background-color: pink;
+            text-align: center;
+            margin-left: 50px;
+            color: gray;
+            font-family: fantasy;
+        }
+        #parrafo2:hover{
+            column-count: 2;
+            column-width: 30%;        
+        }
+        #parrafo2:active{
+            column-count: 3;
+        }
+        #foto1{
+        height: 30vh;
+        width: 30vh;
+        object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="primerDIv">
+        <div id="cuadro">
+            <img id="foto1" title="itadori" src="itadori.jpg">
+        </div>
+    </div>
+    <div id="texto">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Quaerat unde at optio quam,
+            voluptate blanditiis doloribus iste quis a aperiam laudantium maiores sapiente sit. <br>Obcaecati dolorem
+            blanditiis laborum cum illo.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis doloremque mollitia officia.
+            <br>
+            Neque quo maiores aut natus est tenetur accusamus ex quisquam quas hic distinctio, velit quae dolorem in!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic at quasi exercitationem porro tenetur, <br>
+            voluptate saepe minima sit error iste corrupti voluptas animi, placeat aspernatur. Unde provident natus
+            libero quo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo iure<br>
+        </p>
+        
+    </div>
+    <div id="parrafo2">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel illo exercitationem veniam, amet <br>
+        dignissimos dolorum repudiandae rem fuga delectus illum sunt ex, repellat voluptatibus, ipsam quam odio pariatur
+        quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In blanditiis possimus mollitia sapiente quibusdam quas impedit ipsam,<br> explicabo exercitationem, ipsa debitis unde delectus cupiditate dolore voluptatum esse id porro perferendis.
+    </p>
+    </div>
+</body>
+
+</html>
